@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,19 +11,31 @@
       img {
         width: 40%;
       }
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      section div {
+        width: 40%;
+        margin-left: 4rem;
+      }
     </style>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Prints</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html" id="active">Home</a></li>
+        <li><a href="#" id="services">Services</a></li>
+        <li><a href="#" id="prints">Prints</a></li>
+        <li><a href="gallery.html" id="gallery">Gallery</a></li>
         <li>
-          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a href="https://www.instagram.com/" target="_blank" id="insta"
+            >Instagram</a
+          >
         </li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" id="contact">Contact</a></li>
       </ul>
     </nav>
     <header>
@@ -35,8 +47,7 @@
           src="images/grid-vs-flexbox.jpg"
           alt="An image that shows an example of CSS Flexbox and CSS Grid layouts.
           It also states that CSS Flexbox is best used for one-dimensional layouts,
-          but CSS Grid is best used for multi-dimensional layouts."
-        />
+          but CSS Grid is best used for multi-dimensional layouts." />
         <div id="flex-text">
           <header>
             <h2>Flex Demo</h2>
