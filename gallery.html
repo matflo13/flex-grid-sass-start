@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photo Grid | Advanced CSS</title>
     <link rel="stylesheet" href="stylesheets/page-styling.css" />
+    <style>
+      .gallery {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(auto-fill, 200px);
+        grid-template-columns: 40% 2fr;
+      }
+
+      .gallery a {
+        width: 100%;
+        height: 100%;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -25,19 +44,65 @@
     </header>
     <main>
       <h2>CSS Grid Photo Gallery</h2>
-      <section>
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
+      <section class="gallery">
+        <a
+          href="https://www.google.com/imgres?q=lebron&imgurl=https%3A%2F%2Fcdn.britannica.com%2F19%2F233519-050-F0604A51%2FLeBron-James-Los-Angeles-Lakers-Staples-Center-2019.jpg&imgrefurl=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FLeBron-James&docid=gKw7G1m3FTD2MM&tbnid=lMBmKoFwSsI4WM&vet=12ahUKEwj-xofwod-UAxW9hIkEHbywLIkQnPAOegQIGBAB..i&w=1109&h=1600&hcb=2&ved=2ahUKEwj-xofwod-UAxW9hIkEHbywLIkQnPAOegQIGBAB&safe=active&ssui=on"
+          target="_blank">
+          <img src="images/lebron-dribble.webp" />
+        </a>
+        <a
+          href="https://www.google.com/imgres?q=lebron&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb2%2FLeBron_James_%252815662939969%2529.jpg%2F250px-LeBron_James_%252815662939969%2529.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLeBron_James&docid=z-ZwiWHhXouBBM&tbnid=EO8EW5x4hBgN1M&vet=12ahUKEwj-xofwod-UAxW9hIkEHbywLIkQnPAOegQIGhAB..i&w=250&h=333&hcb=2&ved=2ahUKEwj-xofwod-UAxW9hIkEHbywLIkQnPAOegQIGhAB&safe=active&ssui=on"
+          target="_blank">
+          <img src="images/lebron-shot.jpg" />
+        </a>
+        <a
+          href="https://www.google.com/imgres?q=lebron&imgurl=https%3A%2F%2Fmedia-cldnry.s-nbcnews.com%2Fimage%2Fupload%2Frockcms%2F2025-02%2F250207-lebron-james-mn-0815-1a91c8.jpg&imgrefurl=https%3A%2F%2Fwww.nbcnews.com%2Fsports%2Fnba%2Flebron-james-oldest-40-points-rcna191155&docid=iAmefZxdUKDbiM&tbnid=dUReBs0mZgiBbM&vet=12ahUKEwj-xofwod-UAxW9hIkEHbywLIkQnPAOegQIFRAB..i&w=1500&h=1000&hcb=2&ved=2ahUKEwj-xofwod-UAxW9hIkEHbywLIkQnPAOegQIFRAB&safe=active&ssui=on"
+          target="_blank">
+          <img src="images/lebron-celebrate.jpg" />
+        </a>
+        <a
+          href="https://www.google.com/imgres?q=lebron&imgurl=https%3A%2F%2Fcdn.britannica.com%2F01%2F239401-050-31FC9765%2FLeBron-James-of-the-Los-Angeles-Lakers-drives-against-AJ-Griffin-Atlanta-Hawks-at-State-Farm-Arena-December-2022.jpg&imgrefurl=https%3A%2F%2Fwww.britannica.com%2Fbiography%2FLeBron-James&docid=gKw7G1m3FTD2MM&tbnid=vkEQ-QGsNoKYlM&vet=12ahUKEwj-xofwod-UAxW9hIkEHbywLIkQnPAOegQIHxAB..i&w=1600&h=1102&hcb=2&ved=2ahUKEwj-xofwod-UAxW9hIkEHbywLIkQnPAOegQIHxAB&safe=active&ssui=on"
+          target="_blank">
+          <img src="images/lebron-dunk.webp" />
+        </a>
+        <a
+          href="https://www.google.com/imgres?q=lebron%20cavs&imgurl=https%3A%2F%2Fobserver.case.edu%2Fwp-content%2Fuploads%2F2021%2F02%2Fsports2-900x600.jpg&imgrefurl=https%3A%2F%2Fobserver.case.edu%2Flebron-james-rise%2F&docid=5nOp9dgZHjeIqM&tbnid=937vYTkTg8WjyM&vet=12ahUKEwiugbT-od-UAxUrtokEHeTuBDgQnPAOegQIIBAB..i&w=900&h=600&hcb=2&ved=2ahUKEwiugbT-od-UAxUrtokEHeTuBDgQnPAOegQIIBAB&safe=active&ssui=on"
+          target="_blank">
+          <img src="images/lebron-jersey-point.jpg" />
+        </a>
+        <a
+          href="https://www.google.com/imgres?q=lebron%20cavs&imgurl=https%3A%2F%2Fi.guim.co.uk%2Fimg%2Fmedia%2F4570fbdf4a8e528a5cb951f3b48f9afe3f7568a7%2F0_159_3385_2030%2Fmaster%2F3385.jpg%3Fwidth%3D1200%26height%3D1200%26quality%3D85%26auto%3Dformat%26fit%3Dcrop%26s%3D144196910005feeb238772894e670a6f&imgrefurl=https%3A%2F%2Fwww.theguardian.com%2Fsport%2F2017%2Fapr%2F21%2Flebron-james-cavaliers-historic-comeback-win-nba&docid=oUJEt1fL839AQM&tbnid=OljL5nwwXtHSXM&vet=12ahUKEwiugbT-od-UAxUrtokEHeTuBDgQnPAOegQIGRAB..i&w=1200&h=1200&hcb=2&ved=2ahUKEwiugbT-od-UAxUrtokEHeTuBDgQnPAOegQIGRAB&safe=active&ssui=on"
+          target="_blank">
+          <img src="images/lebron-scream.webp" />
+        </a>
+        <a
+          href="https://www.google.com/imgres?q=lebron%20cavs&imgurl=https%3A%2F%2Fcavaliersnation.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flebroncavs-1024x682.jpeg&imgrefurl=https%3A%2F%2Fcavaliersnation.com%2F2018%2F06%2F07%2Flebron-james-says-he-left-cavs-2010-due-to-lack-talent%2F&docid=YwlgyJh7r_A1SM&tbnid=D7IEhwq7eUd5yM&vet=12ahUKEwiugbT-od-UAxUrtokEHeTuBDgQnPAOegQIIRAB..i&w=1024&h=682&hcb=2&ved=2ahUKEwiugbT-od-UAxUrtokEHeTuBDgQnPAOegQIIRAB&safe=active&ssui=on"
+          target="_blank">
+          <img src="images/lebron-hands-on-hips.jpeg" />
+        </a>
+        <a
+          href="https://www.google.com/imgres?q=lebron%20heat&imgurl=https%3A%2F%2Fheatnation.com%2Fwp-content%2Fuploads%2F2019%2F05%2Fap_aptopix_heat_bucks_basketball-e1607288607193.jpg&imgrefurl=https%3A%2F%2Fheatnation.com%2Fmedia%2Fdwyane-wade-lebron-james-alonzo-mourning-ranked-best-miami-heat-players-ever%2F&docid=py4NIH5cCc7cnM&tbnid=Xmsf7vQ1E5unKM&vet=12ahUKEwjM8ZeKot-UAxWDq4kEHfZAICoQnPAOegQIHhAB..i&w=900&h=540&hcb=2&ved=2ahUKEwjM8ZeKot-UAxWDq4kEHfZAICoQnPAOegQIHhAB&safe=active&ssui=on"
+          target="_blank">
+          <img src="images/lebron-dwade-alleyoop.jpg" />
+        </a>
+        <a
+          href="https://www.google.com/imgres?q=lebron%20heat&imgurl=https%3A%2F%2Fcdn.nba.com%2Fteams%2Flegacy%2Fwww.nba.com%2Fheat%2Fsites%2Fheat%2Ffiles%2Flegacy%2Fmain_photo%2F600_jamestranscending_130506.jpg&imgrefurl=https%3A%2F%2Fwww.nba.com%2Fheat%2Fnews_recap%2Ftranscending-excellence-lebron-james&docid=-Zk0HLIdbVITyM&tbnid=YTMiR8imfIj2WM&vet=12ahUKEwjM8ZeKot-UAxWDq4kEHfZAICoQnPAOegQIGRAB..i&w=600&h=400&hcb=2&ved=2ahUKEwjM8ZeKot-UAxWDq4kEHfZAICoQnPAOegQIGRAB&safe=active&ssui=on"
+          target="_blank">
+          <img src="images/lebron-fire.avif" />
+        </a>
+        <a
+          href="https://www.usatoday.com/story/sports/nba/heat/2013/11/05/lebron-james-miami-heat-nba-scoring-milestone/3448757/"
+          target="_blank">
+          <img src="images/lebron-finger-point.webp" />
+        </a>
+        <a
+          href="https://www.olympics.com/en/news/lebron-james-basketball-usa-relishes-presence-paris-2024"
+          target="_blank">
+          <img src="images/lebron-usa-2024.avif" />
+        </a>
+        <a href="https://www.nbcnews.com/id/wbna26267658" target="_blank">
+          <img src="images/lebron-usa-2008.webp" />
+        </a>
       </section>
     </main>
   </body>
